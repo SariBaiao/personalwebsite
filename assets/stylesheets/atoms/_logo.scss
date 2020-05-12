@@ -1,0 +1,11 @@
+  .logo {
+    height: 20px;
+    margin: 20px;
+    position: absolute;
+    @include phablet() {
+      height: 30px;
+      position: fixed;
+      left: 20px;
+      top: 20px;
+    }
+  }

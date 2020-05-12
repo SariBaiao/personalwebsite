@@ -1,0 +1,84 @@
+.projects {
+  h2 {
+    @include phablet() {
+      padding-left: 40px;
+      margin: 50px 0;
+    }
+  }
+  &.projects-wrapper {
+    box-shadow: (-10px 0px 15px rgba(0,0,0,0.1));
+    background-color: white;
+    width: 100%;
+    padding: 40px 20px;
+    @include phablet() {
+      padding: 80px 120px 40px 120px;
+    }
+
+      .projects-card-wrapper {
+        background-color: $light;
+        width: 100%;
+        position: relative;
+        margin-top: 40px;
+        @include phablet() {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 100px;
+        }
+
+        .title {
+          position: absolute;
+          top:-20px;
+          @include phablet() {
+            top:-30px;
+          }
+        }
+
+        .project-text-wrapper {
+          padding: 20px 0 0;
+          margin-bottom: 40px;
+          @include phablet() {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column;
+            padding: 30px;
+            margin-bottom: 0;
+          }
+        }
+
+        img {
+          width: 100%;
+          max-height: 330px;
+          z-index: 2;
+          @include phablet {
+            width: auto;
+          }
+
+          &.opta {
+            max-height: 480px;
+          }
+          &.plae-bg-1 {
+            display: none;
+            @include phablet {
+              display: inline-block;
+              position: absolute;
+              right: 0;
+              top: 0;
+              z-index: 1;
+            }
+          }
+          &.plae-bg-2 {
+            display: none;
+            @include phablet {
+              display: inline-block;
+              position: absolute;
+              bottom: 0;
+              left: 55%;
+              transform: translateX(-50%);
+              z-index: 1;
+            }
+
+          }
+        }
+      }
+  }
+}

@@ -1,0 +1,30 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  width: 100%;
+  padding: 10vh 20px 0;
+  text-align: center;
+  height: 100vh;
+  @include tablet {
+    padding: 80px 110px 0;
+    text-align: left;
+    flex-flow: row;
+  }
+  .hero_bg {
+    height: 60vh;
+    object-fit: contain;
+    @include tablet {
+      height: 620px;
+    }
+  }
+  p {
+    max-width: 530px;
+  }
+  .hero-text-wrapper {
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
+}

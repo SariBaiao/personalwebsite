@@ -1,0 +1,27 @@
+
+.projects {
+    .tools {
+    @extend .flex-vam;
+    margin-top: 20px;
+
+    @include phablet() {
+      padding: 0 40px;
+      margin-top: 40px;
+    }
+
+    img {
+      height: 28px;
+      @include phablet() {
+        height: inherit;
+        max-height: 70px;
+      }
+    }
+
+    img:not(:last-child) {
+      margin-right: 10px;
+      @include phablet() {
+        margin-right: 40px;
+      }
+    }
+}
+}

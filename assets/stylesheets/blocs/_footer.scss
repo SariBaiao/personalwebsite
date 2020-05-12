@@ -1,0 +1,28 @@
+footer {
+  padding: 40px 20px 20px;
+  @include phablet {
+    padding: 100px 0 40px;
+  }
+  a {
+    &.email {
+      font-family: Inter-Light;
+      font-size: 18px;
+      margin-top: 10px;
+      @include phablet {
+        font-size: 40px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  p{
+    font-size: 10px;
+    opacity: 0.3;
+    max-width: 100%;
+    margin-top: 50px;
+    @include phablet {
+      font-size: 14px;
+      margin-top: 70px;
+    }
+  }
+}
