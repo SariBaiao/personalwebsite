@@ -1,13 +1,13 @@
 .events {
   background-color: $light;
   padding: 20px;
-  @include phablet {
+  @include desktop {
     padding: 80px 160px;
   }
   img {
     height: 30px;
     margin-top: 40px;
-    @include phablet {
+    @include desktop {
       height: auto;
       max-height: 85px;
       margin-top: 60px;

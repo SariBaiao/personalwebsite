@@ -3,7 +3,7 @@
   @include transition();
   &.desktop {
     display: none;
-    @include phablet {
+    @include desktop {
       display: flex;
     }
   }
@@ -13,7 +13,7 @@
     text-align: right;
     width: 100%;
     margin: 20px 10px 10px 0;
-    @include phablet {
+    @include desktop {
       display: none;
     }
   }
