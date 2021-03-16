@@ -6,15 +6,17 @@
   padding: 10vh 20px 0;
   text-align: center;
   height: 100vh;
-  @include tablet {
+  @include desktop {
     padding: 80px 110px 0;
     text-align: left;
     flex-flow: row;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   .hero_bg {
     height: 60vh;
     object-fit: contain;
-    @include tablet {
+    @include desktop {
       height: 620px;
       align-self: flex-end;
     }
@@ -24,7 +26,7 @@
   }
   .hero-text-wrapper {
     display: none;
-    @include tablet {
+    @include desktop {
       display: inline-block;
     }
   }

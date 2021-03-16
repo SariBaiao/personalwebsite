@@ -11,12 +11,12 @@ body {
 h1 {
   font-size: 22px;
   font-family: Inter-Bold;
-  @include phablet() {
+  @include desktop() {
     font-size: 50px;
   }
   &.big {
     font-size: 32px;
-    @include phablet() {
+    @include desktop() {
       font-size: 60px;
     }
   }
@@ -27,7 +27,7 @@ h2 {
   font-family: Maax;
   letter-spacing: 5px;
   text-transform: uppercase;
-  @include phablet {
+  @include desktop {
     font-size: 18px;
     letter-spacing: 10px;
   }
@@ -37,7 +37,7 @@ h3 {
   font-size: 28px;
   font-weight: normal;
   line-height: 120%;
-  @include phablet {
+  @include desktop {
     font-size: 46px;
   }
 }
@@ -46,7 +46,7 @@ p {
   line-height: 130%;
   letter-spacing: 2%;
   max-width: 400px;
-  @include phablet() {
+  @include desktop() {
     font-size: 22px;
   }
   &.update {
@@ -54,7 +54,7 @@ p {
     opacity: 0.3;
     font-family: Inter-Italic;
     max-width: 100%;
-    @include phablet() {
+    @include desktop() {
       padding-left: 40px;
     }
   }
