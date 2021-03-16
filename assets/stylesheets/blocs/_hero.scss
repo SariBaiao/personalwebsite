@@ -16,6 +16,7 @@
     object-fit: contain;
     @include tablet {
       height: 620px;
+      align-self: flex-end;
     }
   }
   p {
